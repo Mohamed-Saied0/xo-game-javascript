@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>X - O Game</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Simple Tic Tac Toe Game">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <header>
+            <img src="my-photo.png" alt="Developer Photo" title="My Photo">
+            <p>
+    X - O Game | Made by <strong>Mohamed Saied</strong> <br>31/1/2026
+</p>
+        </header>
+
+        <div class="main-container">
+            <button class="btn-start">
+                Play
+            </button>
+
+            <div class="game-wrapper hidden">
+                <div class="scoreboard">
+                     <div class="score-box player-x">Player ( X ):  <span>0</span></div>
+                     <div class="score-box player-o">Player ( O ):  <span>0</span></div>
+                     <div class="btn-reset">Reset Score</div>
+                </div>
+
+                <div class="board-container">
+                    <table class="game-board">
+                        <tbody>
+                            <tr>
+                                <td class="cell" data-position="0-0"></td>
+                                <td class="cell" data-position="0-1"></td>
+                                <td class="cell" data-position="0-2"></td>
+                            </tr>
+                            <tr>
+                                <td class="cell" data-position="1-0"></td>
+                                <td class="cell" data-position="1-1"></td>
+                                <td class="cell" data-position="1-2"></td>
+                            </tr>
+                            <tr>
+                                <td class="cell" data-position="2-0"></td>
+                                <td class="cell" data-position="2-1"></td>
+                                <td class="cell" data-position="2-2"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="status-messages">
+                    <div class="msg msg-win-x hidden">
+                        Player (X) Wins!
+                    </div>
+                    <div class="msg msg-win-o hidden">
+                        Player (O) Wins!
+                    </div>
+                    <div class="msg msg-draw hidden">
+                        Draw
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
